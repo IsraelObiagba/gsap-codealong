@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Currency Converter</title>
+
+	<meta name="description" content="The Currency Converter is a PWA using the free Currency converter API: https://free.currencyconverterapi.com/ as part of the ALC 3.0 Mobile web Specialist Challenge">
+	<meta name="author" content="Israel Obiagba">
+
+	<!-- Favicon, Apple Icons and Microsoft Tiles -->
+	<link rel="apple-touch-icon" sizes="120x120" href="assets/img/fav/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav/favicon-16x16.png">
+	<link rel="manifest" href="assets/img/fav/site.webmanifest">
+	<link rel="mask-icon" href="assets/img/fav/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Google font used -->
+	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700" rel="stylesheet">
+
+	<!-- CSS Reset -->
+	<link href="assets/css/minireset.min.css" rel="stylesheet">
+
+	<!-- IndexDB Library -->
+	<script src="https://unpkg.com/idb@2.0.4/lib/idb.js"></script>
+
+	<!-- Page Style -->
+	<link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+	<main class="app-container" id="app">
+		<div class="app-logo">
+			<img src="assets/img/logo.png"
+				 class="app-icon"
+				 alt="icon">
+		</div>
+		<div class="app-result">
+			<p class="app-num" id="is-converted">0</p>
+			<p class="app-currency" id="is-currency-code">usd</p>
+		</div>
+		<div class="app-io">
+			<div class="app-input-group">
+				<label for="is-amt">type amount</label>
+				<input type="number" class="app-amt" id="is-amt" placeholder="323">
+			</div>
+			<div class="app-input-group">
+				<label for="is-currency1">from</label>
+				<select name="convert-from" class="app-select" id="is-currency1">
+					<option value="--">pick currency</option>
+				</select>
+			</div>
+			<div class="app-input-group">
+				<label for="is-currency2">to</label>
+				<select name="convert-to" class="app-select" id="is-currency2">
+					<option value="--">pick currency</option>
+				</select>
+			</div>
+			<button class="app-btn" id="is-btn">get convertion</button>
+		</div>
+	</main>
+
+	<script src="https://israelobiagba.github.io/currency-converter/assets/js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="https://israelobiagba.github.io/currency-converter/assets/js/pwa.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
